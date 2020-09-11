@@ -1,4 +1,4 @@
-<em>GADS-2020-cloud-projects-translation </em> <br/>
+<em>GADS-2020-CLOUD PROJECT TRANSLATIONS </em> <br/>
 ***LAB 1: APP DEV-SETTING UP A DEVELOPMENT ENVIROMENT***
 
 **Objectives**
@@ -58,7 +58,7 @@ Return to the SSH window, and stop the application by pressing Ctrl+C.
   ***END OF LAB***
 
 
-***LAB 2: Google Cloud Fundamentals: Getting Started with Compute Engine***<br/?
+***LAB 2: Google Cloud Fundamentals: Getting Started with Compute Engine***<br/>
 **Objectives**
 In this lab, you will learn how to perform the following tasks:
   * Create a Compute Engine virtual machine using the Google Cloud Platform (GCP) Console.
