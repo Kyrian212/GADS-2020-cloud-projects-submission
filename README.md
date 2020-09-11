@@ -67,16 +67,16 @@ In this lab, you will learn how to perform the following tasks:
 
 ***Steps: Sign in to the Google Cloud Platform (GCP) Console***
 
-**1. Create a virtual machine using the GCP Console
+**1. Create a virtual machine using the GCP Console**
         gcloud compute instances create "my-vm-1" --machine-type "n1-standard-1" 
         --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default" --tags http
 
-**2. Create a virtual machine using the gcloud command line
+**2. Create a virtual machine using the gcloud command line**
         gcloud compute zones list | grep us-central1
         gcloud compute instances create "my-vm-2" --machine-type "n1-standard-1"
          --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default"
 
- **3. Connect between VM instances
+ **3. Connect between VM instances**
  
       * Use the ping command to confirm that my-vm-2 can reach my-vm-1 over the network:
              ping my-vm-1
@@ -104,15 +104,15 @@ Congratulations!
 ***END OF LAB***
 
 
-**LAB 3: Google Cloud Fundamentals: Getting Started with GKE
+**LAB 3: Google Cloud Fundamentals: Getting Started with GKE**
 
-**Objectives
+**Objectives**
 
 In this lab, you learn how to perform the following tasks:
     * Provision a Kubernetes cluster using Kubernetes Engine.
     * Deploy and manage Docker containers using kubectl.
 
-**Steps: Sign in to the Google Cloud Platform (GCP) Console
+**Steps: Sign in to the Google Cloud Platform (GCP) Console**
 
     1. Confirm that needed APIs are enabled
         Make a note of the name of your GCP project. This value is shown in the top bar of the Google Cloud Platform Console. It will be of the form qwiklabs-gcp- followed by hexadecimal numbers.
