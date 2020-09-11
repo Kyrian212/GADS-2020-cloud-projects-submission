@@ -13,18 +13,18 @@
      dev-instance, 
   * select us-central1 for region and us-central1-a for the zone.
   
- ** 1.  Install software on the VM instance**
+ **1.  Install software on the VM instance**
   * In the SSH session, to update the Debian package list, execute the following command:
       sudo apt-get update
 
   * To install Git, execute the following command:
       sudo apt-get install git
 
-  * If prompted, press Enter.
+  * If prompted, press Enter.<br/>
     To download the Node.js setup script, execute the following command:
       curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-  * To install npm and Node.js, execute the following command:
+  * To install npm and Node.js, execute the following command:<br/>
       sudo apt install nodejs
 
 **2.  Configure the VM to Run Application Software**
@@ -58,7 +58,7 @@ Return to the SSH window, and stop the application by pressing Ctrl+C.
   ***END OF LAB***
 
 
-***LAB 2: Google Cloud Fundamentals: Getting Started with Compute Engine***
+***LAB 2: Google Cloud Fundamentals: Getting Started with Compute Engine***<br/?
 **Objectives**
 In this lab, you will learn how to perform the following tasks:
   * Create a Compute Engine virtual machine using the Google Cloud Platform (GCP) Console.
@@ -67,11 +67,11 @@ In this lab, you will learn how to perform the following tasks:
 
 ***Steps: Sign in to the Google Cloud Platform (GCP) Console***
 
-**1. Create a virtual machine using the GCP Console**
+**1. Create a virtual machine using the GCP Console**<br/>
         gcloud compute instances create "my-vm-1" --machine-type "n1-standard-1" 
         --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default" --tags http
 
-**2. Create a virtual machine using the gcloud command line**
+**2. Create a virtual machine using the gcloud command line**<br/>
         gcloud compute zones list | grep us-central1
         gcloud compute instances create "my-vm-2" --machine-type "n1-standard-1"
          --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default"
