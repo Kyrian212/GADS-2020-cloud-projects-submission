@@ -1,0 +1,51 @@
+LAB: Google Cloud Fundamentals: Getting Started with Compute Engine
+##Objectives
+In this lab, you will learn how to perform the following tasks:
+
+  * Create a Compute Engine virtual machine using the Google Cloud Platform (GCP) Console.
+
+  * Create a Compute Engine virtual machine using the gcloud command-line interface.
+
+  * Connect between the two instances.
+
+#Steps: Sign in to the Google Cloud Platform (GCP) Console
+
+ 1. Create a virtual machine using the GCP Console
+        gcloud compute instances create "my-vm-1" --machine-type "n1-standard-1" 
+        --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default" --tags http
+
+ 2. Create a virtual machine using the gcloud command line
+        gcloud compute zones list | grep us-central1
+        gcloud compute instances create "my-vm-2" --machine-type "n1-standard-1"
+         --image-project "debian-cloud" --image "debian-9-stretch-v20190213" --subnet "default"
+
+ 3. Connect between VM instances
+
+      * Use the ping command to confirm that my-vm-2 can reach my-vm-1 over the network:
+             ping my-vm-1
+
+      * Use the ssh command to open a command prompt on my-vm-1:
+            ssh my-vm-1
+
+        If you are prompted about whether you want to continue connecting to a host with unknown authenticity, 
+        enter yes to confirm that you do.
+
+      * At the command prompt on my-vm-1, install the Nginx web server:
+            sudo apt-get install nginx-light -y
+
+      * Use the nano text editor to add a custom message to the home page of the web server:
+            sudo nano /var/www/html/index.nginx-debian.html
+
+
+      * Confirm that the web server is serving your new page. At the command prompt on my-vm-1, execute this command:
+            curl http://localhost/
+
+
+      *To confirm that my-vm-2 can reach the web server on my-vm-1, at the command prompt on my-vm-2, execute this command:
+            curl http://my-vm-1/
+
+
+Congratulations!
+In this lab, you created virtual machine (VM) instances in two different zones and connected to them using ping, ssh, and HTTP.
+
+***END OF LAB***
